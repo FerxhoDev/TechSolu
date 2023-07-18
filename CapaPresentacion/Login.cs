@@ -49,7 +49,7 @@ namespace CapaPresentacion
 
             if(ousuario != null)
             {
-                Inicio init = new Inicio();
+                Inicio init = new Inicio(ousuario);
 
                 init.Show();
                 this.Hide();

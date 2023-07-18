@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using CapaEntidad;
 namespace CapaPresentacion
 {
     public partial class Inicio : Form
     {
-        public Inicio()
+        private static Usuario usuariolog; 
+        public Inicio(Usuario objusuario)
         {
+            usuariolog = objusuario;
             InitializeComponent();
+            string primerNombre = objusuario.Nombre.Split(' ')[0];
+            lblName.Text = "Hola " + primerNombre + "!";
         }
 
         private void gunaPictureBox4_Click(object sender, EventArgs e)
