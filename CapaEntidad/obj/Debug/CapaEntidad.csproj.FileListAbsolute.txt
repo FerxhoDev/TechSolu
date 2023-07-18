@@ -1,0 +1,9 @@
+F:\MediFarmServices\MediFarmSistem\CapaEntidad\bin\Debug\CapaEntidad.dll
+F:\MediFarmServices\MediFarmSistem\CapaEntidad\bin\Debug\CapaEntidad.pdb
+F:\MediFarmServices\MediFarmSistem\CapaEntidad\bin\Debug\System.Data.SqlClient.dll
+F:\MediFarmServices\MediFarmSistem\CapaEntidad\bin\Debug\System.Data.SqlClient.xml
+F:\MediFarmServices\MediFarmSistem\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+F:\MediFarmServices\MediFarmSistem\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+F:\MediFarmServices\MediFarmSistem\CapaEntidad\obj\Debug\CapaEntidad.csproj.CopyComplete
+F:\MediFarmServices\MediFarmSistem\CapaEntidad\obj\Debug\CapaEntidad.dll
+F:\MediFarmServices\MediFarmSistem\CapaEntidad\obj\Debug\CapaEntidad.pdb

@@ -1,0 +1,13 @@
+F:\MediFarmServices\MediFarmSistem\CapaNegocio\bin\Debug\CapaNegocio.dll
+F:\MediFarmServices\MediFarmSistem\CapaNegocio\bin\Debug\CapaNegocio.pdb
+F:\MediFarmServices\MediFarmSistem\CapaNegocio\bin\Debug\CapaDatos.dll
+F:\MediFarmServices\MediFarmSistem\CapaNegocio\bin\Debug\CapaEntidad.dll
+F:\MediFarmServices\MediFarmSistem\CapaNegocio\bin\Debug\System.Data.SqlClient.dll
+F:\MediFarmServices\MediFarmSistem\CapaNegocio\bin\Debug\CapaDatos.pdb
+F:\MediFarmServices\MediFarmSistem\CapaNegocio\bin\Debug\CapaEntidad.pdb
+F:\MediFarmServices\MediFarmSistem\CapaNegocio\bin\Debug\System.Data.SqlClient.xml
+F:\MediFarmServices\MediFarmSistem\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+F:\MediFarmServices\MediFarmSistem\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+F:\MediFarmServices\MediFarmSistem\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+F:\MediFarmServices\MediFarmSistem\CapaNegocio\obj\Debug\CapaNegocio.dll
+F:\MediFarmServices\MediFarmSistem\CapaNegocio\obj\Debug\CapaNegocio.pdb
