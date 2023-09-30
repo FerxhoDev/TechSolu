@@ -73,6 +73,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap categoria_50 {
+            get {
+                object obj = ResourceManager.GetObject("categoria-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Character_working_laptop_sitting_chair {
             get {
                 object obj = ResourceManager.GetObject("Character-working-laptop-sitting-chair", resourceCulture);
@@ -86,6 +96,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap close_20 {
             get {
                 object obj = ResourceManager.GetObject("close-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap compras_50 {
+            get {
+                object obj = ResourceManager.GetObject("compras-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,6 +163,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logo_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Logo-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoFarm_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("LogoFarm-removebg-preview", resourceCulture);
@@ -166,6 +196,26 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap online_point_24 {
             get {
                 object obj = ResourceManager.GetObject("online-point-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paquete_50 {
+            get {
+                object obj = ResourceManager.GetObject("paquete-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ventas_50 {
+            get {
+                object obj = ResourceManager.GetObject("ventas-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

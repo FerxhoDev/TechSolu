@@ -21,3 +21,7 @@ F:\MediFarmServices\MediFarmSistem\CapaPresentacion\bin\Debug\CapaEntidad.pdb
 F:\MediFarmServices\MediFarmSistem\CapaPresentacion\bin\Debug\CapaNegocio.pdb
 F:\MediFarmServices\MediFarmSistem\CapaPresentacion\bin\Debug\CapaDatos.pdb
 F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.Inicio.resources
+F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmUsuarios.resources
+F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmDash.resources
+F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmCompras.resources
+F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmProveedores.resources
