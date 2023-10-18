@@ -69,7 +69,7 @@
             this.gTxtId = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.gCmbBusqueda = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.gTxtBusqueda = new Guna.UI2.WinForms.Guna2TextBox();
             this.gBtnLimpiarBusc = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gBtnBuscar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gTxtNombre = new Guna.UI2.WinForms.Guna2TextBox();
@@ -610,6 +610,7 @@
             this.gTxtId.ShadowDecoration.Parent = this.gTxtId;
             this.gTxtId.Size = new System.Drawing.Size(35, 32);
             this.gTxtId.TabIndex = 25;
+            this.gTxtId.Visible = false;
             // 
             // label12
             // 
@@ -642,28 +643,28 @@
             this.gCmbBusqueda.Size = new System.Drawing.Size(214, 36);
             this.gCmbBusqueda.TabIndex = 27;
             // 
-            // guna2TextBox1
+            // gTxtBusqueda
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(401, 764);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(273, 39);
-            this.guna2TextBox1.TabIndex = 28;
+            this.gTxtBusqueda.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gTxtBusqueda.DefaultText = "";
+            this.gTxtBusqueda.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.gTxtBusqueda.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.gTxtBusqueda.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gTxtBusqueda.DisabledState.Parent = this.gTxtBusqueda;
+            this.gTxtBusqueda.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gTxtBusqueda.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gTxtBusqueda.FocusedState.Parent = this.gTxtBusqueda;
+            this.gTxtBusqueda.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gTxtBusqueda.HoverState.Parent = this.gTxtBusqueda;
+            this.gTxtBusqueda.Location = new System.Drawing.Point(401, 764);
+            this.gTxtBusqueda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtBusqueda.Name = "gTxtBusqueda";
+            this.gTxtBusqueda.PasswordChar = '\0';
+            this.gTxtBusqueda.PlaceholderText = "";
+            this.gTxtBusqueda.SelectedText = "";
+            this.gTxtBusqueda.ShadowDecoration.Parent = this.gTxtBusqueda;
+            this.gTxtBusqueda.Size = new System.Drawing.Size(273, 39);
+            this.gTxtBusqueda.TabIndex = 28;
             // 
             // gBtnLimpiarBusc
             // 
@@ -681,6 +682,7 @@
             this.gBtnLimpiarBusc.Size = new System.Drawing.Size(112, 45);
             this.gBtnLimpiarBusc.TabIndex = 30;
             this.gBtnLimpiarBusc.Text = "Limpiar";
+            this.gBtnLimpiarBusc.Click += new System.EventHandler(this.gBtnLimpiarBusc_Click);
             // 
             // gBtnBuscar
             // 
@@ -698,6 +700,7 @@
             this.gBtnBuscar.Size = new System.Drawing.Size(130, 45);
             this.gBtnBuscar.TabIndex = 29;
             this.gBtnBuscar.Text = "Buscar";
+            this.gBtnBuscar.Click += new System.EventHandler(this.gBtnBuscar_Click);
             // 
             // gTxtNombre
             // 
@@ -745,6 +748,7 @@
             this.gTxtIndice.ShadowDecoration.Parent = this.gTxtIndice;
             this.gTxtIndice.Size = new System.Drawing.Size(35, 32);
             this.gTxtIndice.TabIndex = 31;
+            this.gTxtIndice.Visible = false;
             // 
             // frmUsuarios
             // 
@@ -754,7 +758,7 @@
             this.Controls.Add(this.gTxtIndice);
             this.Controls.Add(this.gBtnLimpiarBusc);
             this.Controls.Add(this.gBtnBuscar);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.gTxtBusqueda);
             this.Controls.Add(this.gCmbBusqueda);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.gTxtId);
@@ -820,7 +824,7 @@
         private Guna.UI2.WinForms.Guna2TextBox gTxtId;
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2ComboBox gCmbBusqueda;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox gTxtBusqueda;
         private Guna.UI2.WinForms.Guna2GradientButton gBtnLimpiarBusc;
         private Guna.UI2.WinForms.Guna2GradientButton gBtnBuscar;
         private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;

@@ -245,5 +245,34 @@ namespace CapaPresentacion
 
             }
         }
+
+        private void gBtnBuscar_Click(object sender, EventArgs e)
+        {
+            string columnaFiltro = ((OpcionCombo)gCmbBusqueda.SelectedItem).valor.ToString();
+
+            if(gDgvData.Rows.Count > 0)
+            {
+                foreach (DataGridViewRow row in gDgvData.Rows)
+                {
+                    if (row.Cells[columnaFiltro].Value.ToString().Trim().ToUpper().Contains(gTxtBusqueda.Text.Trim().ToUpper())){
+                        row.Visible = true;
+                    }
+                    else
+                    {
+                        row.Visible = false;
+                    }
+                }
+            }
+
+        }
+
+        private void gBtnLimpiarBusc_Click(object sender, EventArgs e)
+        {
+            gTxtBusqueda.Text = "";
+            foreach(DataGridViewRow row in gDgvData.Rows)
+            {
+                row.Visible=true;
+            }
+        }
     }
 }
