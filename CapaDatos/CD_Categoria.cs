@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CapaDatos
 {
-    public class CD__Categoria
+    public class CD_Categoria
     {
         public List<Categoria> Listar()
         {
