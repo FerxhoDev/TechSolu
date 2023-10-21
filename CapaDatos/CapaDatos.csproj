@@ -48,6 +48,7 @@
     <Compile Include="CD_Permiso.cs" />
     <Compile Include="CD_Rol.cs" />
     <Compile Include="CD_Usuario.cs" />
+    <Compile Include="CD_Categoria.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

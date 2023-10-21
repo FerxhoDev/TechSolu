@@ -22,7 +22,7 @@ namespace CapaNegocio
         {
             Mensaje = string.Empty; // declara mensaj como Cadena vacia para no ser null
 
-           c
+           
 
             if (Mensaje != string.Empty)
             {
@@ -65,4 +65,4 @@ namespace CapaNegocio
 
 
 }
-}
+

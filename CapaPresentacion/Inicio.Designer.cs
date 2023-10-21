@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panelMenu = new Guna.UI.WinForms.GunaElipsePanel();
+            this.lblAdmin = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblName = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
@@ -47,7 +48,6 @@
             this.gunaPictureBox5 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPictureBox4 = new Guna.UI.WinForms.GunaPictureBox();
             this.pContainer = new System.Windows.Forms.Panel();
-            this.lblAdmin = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -82,6 +82,20 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(340, 979);
             this.panelMenu.TabIndex = 8;
+            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
+            // 
+            // lblAdmin
+            // 
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblAdmin.Location = new System.Drawing.Point(36, 686);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(97, 30);
+            this.lblAdmin.TabIndex = 15;
+            this.lblAdmin.Text = "Admins";
+            this.lblAdmin.Visible = false;
+            this.lblAdmin.Click += new System.EventHandler(this.lblAdmin_Click);
             // 
             // pictureBox2
             // 
@@ -357,24 +371,11 @@
             // 
             // pContainer
             // 
-            this.pContainer.Location = new System.Drawing.Point(343, 39);
+            this.pContainer.Location = new System.Drawing.Point(340, 39);
             this.pContainer.Name = "pContainer";
-            this.pContainer.Size = new System.Drawing.Size(1511, 935);
+            this.pContainer.Size = new System.Drawing.Size(1515, 935);
             this.pContainer.TabIndex = 11;
             this.pContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pContainer_Paint);
-            // 
-            // lblAdmin
-            // 
-            this.lblAdmin.AutoSize = true;
-            this.lblAdmin.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdmin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblAdmin.Location = new System.Drawing.Point(36, 686);
-            this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(97, 30);
-            this.lblAdmin.TabIndex = 15;
-            this.lblAdmin.Text = "Admins";
-            this.lblAdmin.Visible = false;
-            this.lblAdmin.Click += new System.EventHandler(this.lblAdmin_Click);
             // 
             // Inicio
             // 

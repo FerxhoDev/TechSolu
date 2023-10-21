@@ -25,3 +25,5 @@ F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.f
 F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmDash.resources
 F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmCompras.resources
 F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmProveedores.resources
+F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmAjustes.resources
+F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmCategoria.resources
