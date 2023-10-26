@@ -19,8 +19,9 @@ namespace CapaDatos
             {
                 try
                 {
+
                     StringBuilder query = new StringBuilder();
-                    query.AppendLine("SELECT idProducto, codProducto, Nombre, p.descripcion, c.descripcion[DescripcionCategoria],stock, costo, precio FROM PRODUCTO p");
+                    query.AppendLine("SELECT idProducto, codProducto, Nombre, p.descripcion, c.IdCategoria, c.descripcion[DescripcionCategoria],stock, costo, precio FROM PRODUCTO p ");
                     query.AppendLine("inner join CATEGORIA c on c.idCategoria = p.idCategoria");
 
                     SqlCommand cmd = new SqlCommand(query.ToString(), oconexion);
@@ -36,13 +37,12 @@ namespace CapaDatos
                             {
                                 IdProducto = Convert.ToInt32(dr["idProducto"]),
                                 CodigoProducto = dr["codProducto"].ToString(),
-                                Nombre = dr["nombre"].ToString(),
-                                Descripcion = dr["Descripcion"].ToString(),
-                                oCategoria = new Categoria() { IdCategoria = Convert.ToInt32(dr["idCategoria"]), Descripcion = dr["DescripcionCategoria"].ToString() },
-                                Stock = Convert.ToInt32( dr["stock"].ToString()),
-                                Costo = Convert.ToInt32( dr["costo"].ToString()),
-                                Precio = Convert.ToInt32(dr["precio"].ToString()),
-                                
+                                Nombre = dr["Nombre"].ToString(),
+                                Descripcion = dr["descripcion"].ToString(),
+                                oCategoria = new Categoria() { IdCategoria = Convert.ToInt32(dr["IdCategoria"]), Descripcion = dr["DescripcionCategoria"].ToString() },
+                                Stock = Convert.ToInt32( dr["stock"]),
+                                Costo = Convert.ToInt32( dr["costo"]),
+                                Precio = Convert.ToInt32(dr["precio"]),
                             });
                         }
                     }
