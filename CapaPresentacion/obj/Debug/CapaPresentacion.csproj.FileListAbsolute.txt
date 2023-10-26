@@ -28,3 +28,4 @@ F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.f
 F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmAjustes.resources
 F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmCategoria.resources
 F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmProducto.resources
+F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmClientes.resources
