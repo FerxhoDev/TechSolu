@@ -47,6 +47,13 @@
             this.gBtnEliminar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gBtnGuardar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gDgvData = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.gTxtDescripcion = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.gTxtNombre = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.gTxtCodigo = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CodigoProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,13 +64,6 @@
             this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.gTxtDescripcion = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.gTxtNombre = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.gTxtCodigo = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gDgvData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -388,83 +388,6 @@
             this.gDgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gDgvData_CellContentClick);
             this.gDgvData.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.gDgvData_CellPainting);
             // 
-            // btnSeleccionar
-            // 
-            this.btnSeleccionar.FillWeight = 0.02217987F;
-            this.btnSeleccionar.HeaderText = "";
-            this.btnSeleccionar.MinimumWidth = 30;
-            this.btnSeleccionar.Name = "btnSeleccionar";
-            this.btnSeleccionar.ReadOnly = true;
-            // 
-            // Id
-            // 
-            this.Id.FillWeight = 79.54546F;
-            this.Id.HeaderText = "Id";
-            this.Id.MinimumWidth = 30;
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Visible = false;
-            // 
-            // CodigoProd
-            // 
-            this.CodigoProd.FillWeight = 204.3646F;
-            this.CodigoProd.HeaderText = "Código";
-            this.CodigoProd.MinimumWidth = 80;
-            this.CodigoProd.Name = "CodigoProd";
-            this.CodigoProd.ReadOnly = true;
-            // 
-            // Nombre
-            // 
-            this.Nombre.FillWeight = 355.9276F;
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.MinimumWidth = 150;
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.FillWeight = 10.32773F;
-            this.Descripcion.HeaderText = "Descripción";
-            this.Descripcion.MinimumWidth = 300;
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            // 
-            // idCategoria
-            // 
-            this.idCategoria.HeaderText = "IdCategoia";
-            this.idCategoria.MinimumWidth = 100;
-            this.idCategoria.Name = "idCategoria";
-            this.idCategoria.ReadOnly = true;
-            // 
-            // Categoria
-            // 
-            this.Categoria.FillWeight = 18.2875F;
-            this.Categoria.HeaderText = "Categoria";
-            this.Categoria.MinimumWidth = 160;
-            this.Categoria.Name = "Categoria";
-            this.Categoria.ReadOnly = true;
-            // 
-            // Stock
-            // 
-            this.Stock.HeaderText = "Stock";
-            this.Stock.MinimumWidth = 100;
-            this.Stock.Name = "Stock";
-            this.Stock.ReadOnly = true;
-            // 
-            // Costo
-            // 
-            this.Costo.HeaderText = "Costo";
-            this.Costo.MinimumWidth = 100;
-            this.Costo.Name = "Costo";
-            this.Costo.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.MinimumWidth = 100;
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -574,6 +497,84 @@
             this.gTxtCodigo.ShadowDecoration.Parent = this.gTxtCodigo;
             this.gTxtCodigo.Size = new System.Drawing.Size(300, 39);
             this.gTxtCodigo.TabIndex = 34;
+            // 
+            // btnSeleccionar
+            // 
+            this.btnSeleccionar.FillWeight = 0.02217987F;
+            this.btnSeleccionar.HeaderText = "";
+            this.btnSeleccionar.MinimumWidth = 30;
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.ReadOnly = true;
+            // 
+            // Id
+            // 
+            this.Id.FillWeight = 79.54546F;
+            this.Id.HeaderText = "Id";
+            this.Id.MinimumWidth = 30;
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            // 
+            // CodigoProd
+            // 
+            this.CodigoProd.FillWeight = 204.3646F;
+            this.CodigoProd.HeaderText = "Código";
+            this.CodigoProd.MinimumWidth = 80;
+            this.CodigoProd.Name = "CodigoProd";
+            this.CodigoProd.ReadOnly = true;
+            // 
+            // Nombre
+            // 
+            this.Nombre.FillWeight = 355.9276F;
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.MinimumWidth = 150;
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.FillWeight = 10.32773F;
+            this.Descripcion.HeaderText = "Descripción";
+            this.Descripcion.MinimumWidth = 300;
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            // 
+            // idCategoria
+            // 
+            this.idCategoria.HeaderText = "IdCategoia";
+            this.idCategoria.MinimumWidth = 100;
+            this.idCategoria.Name = "idCategoria";
+            this.idCategoria.ReadOnly = true;
+            this.idCategoria.Visible = false;
+            // 
+            // Categoria
+            // 
+            this.Categoria.FillWeight = 18.2875F;
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.MinimumWidth = 160;
+            this.Categoria.Name = "Categoria";
+            this.Categoria.ReadOnly = true;
+            // 
+            // Stock
+            // 
+            this.Stock.HeaderText = "Stock";
+            this.Stock.MinimumWidth = 100;
+            this.Stock.Name = "Stock";
+            this.Stock.ReadOnly = true;
+            // 
+            // Costo
+            // 
+            this.Costo.HeaderText = "Costo";
+            this.Costo.MinimumWidth = 100;
+            this.Costo.Name = "Costo";
+            this.Costo.ReadOnly = true;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.MinimumWidth = 100;
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
             // 
             // frmProducto
             // 
