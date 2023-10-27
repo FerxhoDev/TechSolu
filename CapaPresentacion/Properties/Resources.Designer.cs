@@ -73,6 +73,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap casa_20 {
+            get {
+                object obj = ResourceManager.GetObject("casa-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap categoria_50 {
             get {
                 object obj = ResourceManager.GetObject("categoria-50", resourceCulture);
@@ -146,6 +156,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap iaProfile_ {
             get {
                 object obj = ResourceManager.GetObject("iaProfile_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_subir_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-subir-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
