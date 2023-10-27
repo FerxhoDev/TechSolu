@@ -120,7 +120,7 @@ namespace CapaPresentacion
         {
             if (Convert.ToInt32(gTxtId.Text) != 0)
             {
-                if (MessageBox.Show("¿Desea eliminar el usuario?", "ZonaTech", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("¿Desea eliminar el Cliente?", "ZonaTech", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
                     string mensaje = string.Empty;
