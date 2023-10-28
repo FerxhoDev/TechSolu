@@ -7,6 +7,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
+using System.Windows.Forms;
 
 namespace CapaDatos
 {
@@ -82,6 +84,112 @@ namespace CapaDatos
             }
 
 
+        }
+
+        public Compra ObtenerCompra(string numero)
+        {
+            Compra objCompra = new Compra();
+
+            using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
+            {
+
+
+                try
+                {
+                    StringBuilder query = new StringBuilder();
+                    query.AppendLine("select c.IdCompra,");
+                    query.AppendLine("u.Nombre,");
+                    query.AppendLine("pr.nombre, pr.telefono,");
+                    query.AppendLine("c.tipoDocumento, c.numeroDocumento, costoTotal, CONVERT(char(10), c.fechaRegistro,103)[FechaRegistro]");
+                    query.AppendLine("from COMPRA c");
+                    query.AppendLine("inner join USUARIO u on u.idUsuario = c.id_Usuario");
+                    query.AppendLine("inner join PROVEEDOR pr on pr.idProveedor = c.id_Proveedor");
+                    query.AppendLine("where c.numeroDocumento = @numero");
+
+
+                    SqlCommand cmd = new SqlCommand(query.ToString(), oconexion);
+
+                    cmd.Parameters.AddWithValue("@numero", numero);
+
+                    cmd.CommandType = CommandType.Text;
+
+                    oconexion.Open();
+
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            objCompra = new Compra()
+                            {
+                                IdCompra = Convert.ToInt32(dr["IdCompra"]),
+                                oUsuario = new Usuario()
+                                {
+                                    Nombre = dr["Nombre"].ToString(),
+                                },
+                                oProveedor = new Proveedor()
+                                {
+                                    Nombre = dr["nombre"].ToString(),
+                                    Telefono = dr["telefono"].ToString(),
+                                },
+                                TipoDocumento = dr["tipoDocumento"].ToString(),
+                                NumeroDocumento = dr["numeroDocumento"].ToString(),
+                                MontoTotal = Convert.ToDecimal( dr["costoTotal"].ToString()),
+                                FechaRegistro = dr["FechaRegistro"].ToString(),
+                            };
+                            
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    objCompra = new Compra();
+                }
+            }
+            return objCompra;
+        }
+
+        public List<Detalle_Compra> ObtenerDetalleCompra(int idcompra)
+        {
+            List<Detalle_Compra> oLista = new List<Detalle_Compra>();
+
+            try
+            {
+                using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
+                {
+                    oconexion.Open();
+                    StringBuilder query = new StringBuilder();
+ 
+                    query.AppendLine("select p.Nombre, dc.Costo, dc.Cantidad, dc.MontoTotal from DETALLECOMPRA dc");
+                    query.AppendLine("inner join PRODUCTO p on p.IdProducto = dc.id_producto");
+                    query.AppendLine("where dc.id_Compra = @idcompra");
+
+
+
+                    SqlCommand cmd = new SqlCommand(query.ToString(), oconexion);
+                    cmd.Parameters.AddWithValue("@idcompra", idcompra);
+                    cmd.CommandType = CommandType.Text;
+
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                         while (dr.Read())
+                         {
+                            oLista.Add(new Detalle_Compra()
+                            {
+                                oProducto = new Producto() { Nombre = dr["Nombre"].ToString() },
+                                Costo = Convert.ToDecimal(dr["Costo"].ToString()),
+                                Cantidad = Convert.ToInt32(dr["Cantidad"].ToString()),
+                                MontoTotal = Convert.ToDecimal(dr["MontoTotal"].ToString()),
+                            });   
+                         }
+                    }                    
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                oLista = new List<Detalle_Compra>();
+            }
+            return oLista;
         }
     }
 }

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.pContainer = new System.Windows.Forms.Panel();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gBtnCategoria = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.pContainer = new System.Windows.Forms.Panel();
             this.gunaElipsePanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,14 +46,6 @@
             this.gunaElipsePanel1.Radius = 12;
             this.gunaElipsePanel1.Size = new System.Drawing.Size(1516, 77);
             this.gunaElipsePanel1.TabIndex = 0;
-            // 
-            // pContainer
-            // 
-            this.pContainer.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pContainer.Location = new System.Drawing.Point(0, 76);
-            this.pContainer.Name = "pContainer";
-            this.pContainer.Size = new System.Drawing.Size(1515, 834);
-            this.pContainer.TabIndex = 1;
             // 
             // guna2GradientButton1
             // 
@@ -70,12 +62,13 @@
             this.guna2GradientButton1.Image = global::CapaPresentacion.Properties.Resources.ventas_50;
             this.guna2GradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2GradientButton1.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2GradientButton1.Location = new System.Drawing.Point(628, 17);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(329, 17);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Size = new System.Drawing.Size(235, 45);
             this.guna2GradientButton1.TabIndex = 3;
             this.guna2GradientButton1.Text = "Ver Detalles";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // gBtnCategoria
             // 
@@ -99,6 +92,14 @@
             this.gBtnCategoria.TabIndex = 2;
             this.gBtnCategoria.Text = "Registrar   ";
             this.gBtnCategoria.Click += new System.EventHandler(this.gBtnCategoria_Click);
+            // 
+            // pContainer
+            // 
+            this.pContainer.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pContainer.Location = new System.Drawing.Point(0, 76);
+            this.pContainer.Name = "pContainer";
+            this.pContainer.Size = new System.Drawing.Size(1515, 834);
+            this.pContainer.TabIndex = 1;
             // 
             // frmCompras
             // 

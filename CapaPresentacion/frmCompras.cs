@@ -62,5 +62,10 @@ namespace CapaPresentacion
         {
             AbrirFormulario((Guna2GradientButton)sender, new FrmRegistrarCom(_usuarioact));
         }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((Guna2GradientButton)sender, new frmDetalleCompra());
+        }
     }
 }

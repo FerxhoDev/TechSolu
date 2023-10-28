@@ -89,6 +89,12 @@
     <Compile Include="frmDash.Designer.cs">
       <DependentUpon>frmDash.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDetalleCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleCompra.Designer.cs">
+      <DependentUpon>frmDetalleCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNegocio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDash.resx">
       <DependentUpon>frmDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleCompra.resx">
+      <DependentUpon>frmDetalleCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNegocio.resx">
       <DependentUpon>frmNegocio.cs</DependentUpon>
