@@ -28,15 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.gBtnAddCompra = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.txtTotalPag = new System.Windows.Forms.TextBox();
+            this.gBtnAddtoCar = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.label11 = new System.Windows.Forms.Label();
             this.gDgvData = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Idproducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.gTxtCantidad = new Guna.UI.WinForms.GunaNumeric();
             this.label10 = new System.Windows.Forms.Label();
@@ -45,12 +54,14 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtCosto = new System.Windows.Forms.TextBox();
             this.txtidProd = new System.Windows.Forms.TextBox();
+            this.gBtnBuscarProd = new Guna.UI.WinForms.GunaCircleButton();
             this.txtProd = new System.Windows.Forms.TextBox();
             this.txtCodProd = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtIdPr = new System.Windows.Forms.TextBox();
+            this.gBtnBuscarPr = new Guna.UI.WinForms.GunaCircleButton();
             this.txtTelefonoPr = new System.Windows.Forms.TextBox();
             this.txtNombrePr = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -61,17 +72,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.gBtnAddCompra = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.gBtnAddtoCar = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.gBtnBuscarProd = new Guna.UI.WinForms.GunaCircleButton();
-            this.gBtnBuscarPr = new Guna.UI.WinForms.GunaCircleButton();
-            this.Idproducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.gunaElipsePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gDgvData)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -98,12 +98,54 @@
             this.gunaElipsePanel1.Size = new System.Drawing.Size(1469, 814);
             this.gunaElipsePanel1.TabIndex = 0;
             // 
+            // gBtnAddCompra
+            // 
+            this.gBtnAddCompra.BorderRadius = 10;
+            this.gBtnAddCompra.CheckedState.Parent = this.gBtnAddCompra;
+            this.gBtnAddCompra.CustomImages.Parent = this.gBtnAddCompra;
+            this.gBtnAddCompra.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
+            this.gBtnAddCompra.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
+            this.gBtnAddCompra.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gBtnAddCompra.ForeColor = System.Drawing.Color.White;
+            this.gBtnAddCompra.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
+            this.gBtnAddCompra.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
+            this.gBtnAddCompra.HoverState.Parent = this.gBtnAddCompra;
+            this.gBtnAddCompra.Image = global::CapaPresentacion.Properties.Resources.etiqueta_50;
+            this.gBtnAddCompra.Location = new System.Drawing.Point(1291, 670);
+            this.gBtnAddCompra.Name = "gBtnAddCompra";
+            this.gBtnAddCompra.ShadowDecoration.Parent = this.gBtnAddCompra;
+            this.gBtnAddCompra.Size = new System.Drawing.Size(136, 96);
+            this.gBtnAddCompra.TabIndex = 14;
+            this.gBtnAddCompra.Text = "Agregar";
+            this.gBtnAddCompra.Click += new System.EventHandler(this.gBtnAddCompra_Click);
+            // 
             // txtTotalPag
             // 
             this.txtTotalPag.Location = new System.Drawing.Point(1267, 613);
             this.txtTotalPag.Name = "txtTotalPag";
             this.txtTotalPag.Size = new System.Drawing.Size(162, 26);
             this.txtTotalPag.TabIndex = 13;
+            // 
+            // gBtnAddtoCar
+            // 
+            this.gBtnAddtoCar.BorderRadius = 10;
+            this.gBtnAddtoCar.CheckedState.Parent = this.gBtnAddtoCar;
+            this.gBtnAddtoCar.CustomImages.Parent = this.gBtnAddtoCar;
+            this.gBtnAddtoCar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
+            this.gBtnAddtoCar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
+            this.gBtnAddtoCar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gBtnAddtoCar.ForeColor = System.Drawing.Color.White;
+            this.gBtnAddtoCar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
+            this.gBtnAddtoCar.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
+            this.gBtnAddtoCar.HoverState.Parent = this.gBtnAddtoCar;
+            this.gBtnAddtoCar.Image = global::CapaPresentacion.Properties.Resources.carrito50;
+            this.gBtnAddtoCar.Location = new System.Drawing.Point(1291, 240);
+            this.gBtnAddtoCar.Name = "gBtnAddtoCar";
+            this.gBtnAddtoCar.ShadowDecoration.Parent = this.gBtnAddtoCar;
+            this.gBtnAddtoCar.Size = new System.Drawing.Size(136, 81);
+            this.gBtnAddtoCar.TabIndex = 9;
+            this.gBtnAddtoCar.Text = "Agregar";
+            this.gBtnAddtoCar.Click += new System.EventHandler(this.gBtnAddtoCar_Click);
             // 
             // label11
             // 
@@ -119,22 +161,22 @@
             // 
             this.gDgvData.AllowUserToAddRows = false;
             this.gDgvData.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            this.gDgvData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gDgvData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gDgvData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gDgvData.BackgroundColor = System.Drawing.Color.Silver;
             this.gDgvData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gDgvData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gDgvData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gDgvData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gDgvData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gDgvData.ColumnHeadersHeight = 32;
             this.gDgvData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Idproducto,
@@ -144,32 +186,32 @@
             this.Cantidad,
             this.SubTotal,
             this.btnEliminar});
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gDgvData.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gDgvData.DefaultCellStyle = dataGridViewCellStyle3;
             this.gDgvData.EnableHeadersVisualStyles = false;
             this.gDgvData.GridColor = System.Drawing.Color.White;
             this.gDgvData.Location = new System.Drawing.Point(42, 356);
             this.gDgvData.MultiSelect = false;
             this.gDgvData.Name = "gDgvData";
             this.gDgvData.ReadOnly = true;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gDgvData.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gDgvData.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.gDgvData.RowHeadersVisible = false;
             this.gDgvData.RowHeadersWidth = 62;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            this.gDgvData.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            this.gDgvData.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gDgvData.RowTemplate.Height = 28;
             this.gDgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gDgvData.Size = new System.Drawing.Size(1216, 410);
@@ -198,6 +240,62 @@
             this.gDgvData.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gDgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gDgvData_CellContentClick);
             this.gDgvData.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.gDgvData_CellPainting);
+            // 
+            // Idproducto
+            // 
+            this.Idproducto.FillWeight = 79.54546F;
+            this.Idproducto.HeaderText = "Id";
+            this.Idproducto.MinimumWidth = 30;
+            this.Idproducto.Name = "Idproducto";
+            this.Idproducto.ReadOnly = true;
+            this.Idproducto.Visible = false;
+            // 
+            // Producto
+            // 
+            this.Producto.FillWeight = 355.9276F;
+            this.Producto.HeaderText = "Producto";
+            this.Producto.MinimumWidth = 150;
+            this.Producto.Name = "Producto";
+            this.Producto.ReadOnly = true;
+            // 
+            // Costo
+            // 
+            this.Costo.FillWeight = 204.3646F;
+            this.Costo.HeaderText = "Costo";
+            this.Costo.MinimumWidth = 80;
+            this.Costo.Name = "Costo";
+            this.Costo.ReadOnly = true;
+            // 
+            // Precio
+            // 
+            this.Precio.FillWeight = 10.32773F;
+            this.Precio.HeaderText = "Precio";
+            this.Precio.MinimumWidth = 300;
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.FillWeight = 31.52491F;
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.MinimumWidth = 200;
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            // 
+            // SubTotal
+            // 
+            this.SubTotal.HeaderText = "Sub Total";
+            this.SubTotal.MinimumWidth = 200;
+            this.SubTotal.Name = "SubTotal";
+            this.SubTotal.ReadOnly = true;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.FillWeight = 0.02217987F;
+            this.btnEliminar.HeaderText = "";
+            this.btnEliminar.MinimumWidth = 30;
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.ReadOnly = true;
             // 
             // groupBox3
             // 
@@ -290,6 +388,29 @@
             this.txtidProd.Size = new System.Drawing.Size(36, 31);
             this.txtidProd.TabIndex = 6;
             // 
+            // gBtnBuscarProd
+            // 
+            this.gBtnBuscarProd.AnimationHoverSpeed = 0.07F;
+            this.gBtnBuscarProd.AnimationSpeed = 0.03F;
+            this.gBtnBuscarProd.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
+            this.gBtnBuscarProd.BorderColor = System.Drawing.Color.Black;
+            this.gBtnBuscarProd.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gBtnBuscarProd.FocusedColor = System.Drawing.Color.Empty;
+            this.gBtnBuscarProd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gBtnBuscarProd.ForeColor = System.Drawing.Color.White;
+            this.gBtnBuscarProd.Image = global::CapaPresentacion.Properties.Resources.búsqueda_20;
+            this.gBtnBuscarProd.ImageSize = new System.Drawing.Size(28, 28);
+            this.gBtnBuscarProd.Location = new System.Drawing.Point(243, 58);
+            this.gBtnBuscarProd.Name = "gBtnBuscarProd";
+            this.gBtnBuscarProd.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
+            this.gBtnBuscarProd.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gBtnBuscarProd.OnHoverForeColor = System.Drawing.Color.White;
+            this.gBtnBuscarProd.OnHoverImage = null;
+            this.gBtnBuscarProd.OnPressedColor = System.Drawing.Color.Black;
+            this.gBtnBuscarProd.Size = new System.Drawing.Size(43, 43);
+            this.gBtnBuscarProd.TabIndex = 5;
+            this.gBtnBuscarProd.Click += new System.EventHandler(this.gBtnBuscarProd_Click);
+            // 
             // txtProd
             // 
             this.txtProd.Location = new System.Drawing.Point(313, 70);
@@ -345,6 +466,29 @@
             this.txtIdPr.Name = "txtIdPr";
             this.txtIdPr.Size = new System.Drawing.Size(36, 31);
             this.txtIdPr.TabIndex = 6;
+            // 
+            // gBtnBuscarPr
+            // 
+            this.gBtnBuscarPr.AnimationHoverSpeed = 0.07F;
+            this.gBtnBuscarPr.AnimationSpeed = 0.03F;
+            this.gBtnBuscarPr.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
+            this.gBtnBuscarPr.BorderColor = System.Drawing.Color.Black;
+            this.gBtnBuscarPr.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gBtnBuscarPr.FocusedColor = System.Drawing.Color.Empty;
+            this.gBtnBuscarPr.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gBtnBuscarPr.ForeColor = System.Drawing.Color.White;
+            this.gBtnBuscarPr.Image = global::CapaPresentacion.Properties.Resources.búsqueda_20;
+            this.gBtnBuscarPr.ImageSize = new System.Drawing.Size(28, 28);
+            this.gBtnBuscarPr.Location = new System.Drawing.Point(533, 44);
+            this.gBtnBuscarPr.Name = "gBtnBuscarPr";
+            this.gBtnBuscarPr.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
+            this.gBtnBuscarPr.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gBtnBuscarPr.OnHoverForeColor = System.Drawing.Color.White;
+            this.gBtnBuscarPr.OnHoverImage = null;
+            this.gBtnBuscarPr.OnPressedColor = System.Drawing.Color.Black;
+            this.gBtnBuscarPr.Size = new System.Drawing.Size(43, 43);
+            this.gBtnBuscarPr.TabIndex = 5;
+            this.gBtnBuscarPr.Click += new System.EventHandler(this.gBtnBuscarPr_Click);
             // 
             // txtTelefonoPr
             // 
@@ -434,149 +578,6 @@
             this.label1.Size = new System.Drawing.Size(204, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "Registrar Compra";
-            // 
-            // gBtnAddCompra
-            // 
-            this.gBtnAddCompra.BorderRadius = 10;
-            this.gBtnAddCompra.CheckedState.Parent = this.gBtnAddCompra;
-            this.gBtnAddCompra.CustomImages.Parent = this.gBtnAddCompra;
-            this.gBtnAddCompra.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
-            this.gBtnAddCompra.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
-            this.gBtnAddCompra.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gBtnAddCompra.ForeColor = System.Drawing.Color.White;
-            this.gBtnAddCompra.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
-            this.gBtnAddCompra.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
-            this.gBtnAddCompra.HoverState.Parent = this.gBtnAddCompra;
-            this.gBtnAddCompra.Image = global::CapaPresentacion.Properties.Resources.etiqueta_50;
-            this.gBtnAddCompra.Location = new System.Drawing.Point(1291, 670);
-            this.gBtnAddCompra.Name = "gBtnAddCompra";
-            this.gBtnAddCompra.ShadowDecoration.Parent = this.gBtnAddCompra;
-            this.gBtnAddCompra.Size = new System.Drawing.Size(136, 96);
-            this.gBtnAddCompra.TabIndex = 14;
-            this.gBtnAddCompra.Text = "Agregar";
-            // 
-            // gBtnAddtoCar
-            // 
-            this.gBtnAddtoCar.BorderRadius = 10;
-            this.gBtnAddtoCar.CheckedState.Parent = this.gBtnAddtoCar;
-            this.gBtnAddtoCar.CustomImages.Parent = this.gBtnAddtoCar;
-            this.gBtnAddtoCar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
-            this.gBtnAddtoCar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
-            this.gBtnAddtoCar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gBtnAddtoCar.ForeColor = System.Drawing.Color.White;
-            this.gBtnAddtoCar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
-            this.gBtnAddtoCar.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
-            this.gBtnAddtoCar.HoverState.Parent = this.gBtnAddtoCar;
-            this.gBtnAddtoCar.Image = global::CapaPresentacion.Properties.Resources.carrito50;
-            this.gBtnAddtoCar.Location = new System.Drawing.Point(1291, 240);
-            this.gBtnAddtoCar.Name = "gBtnAddtoCar";
-            this.gBtnAddtoCar.ShadowDecoration.Parent = this.gBtnAddtoCar;
-            this.gBtnAddtoCar.Size = new System.Drawing.Size(136, 81);
-            this.gBtnAddtoCar.TabIndex = 9;
-            this.gBtnAddtoCar.Text = "Agregar";
-            this.gBtnAddtoCar.Click += new System.EventHandler(this.gBtnAddtoCar_Click);
-            // 
-            // gBtnBuscarProd
-            // 
-            this.gBtnBuscarProd.AnimationHoverSpeed = 0.07F;
-            this.gBtnBuscarProd.AnimationSpeed = 0.03F;
-            this.gBtnBuscarProd.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
-            this.gBtnBuscarProd.BorderColor = System.Drawing.Color.Black;
-            this.gBtnBuscarProd.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gBtnBuscarProd.FocusedColor = System.Drawing.Color.Empty;
-            this.gBtnBuscarProd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gBtnBuscarProd.ForeColor = System.Drawing.Color.White;
-            this.gBtnBuscarProd.Image = global::CapaPresentacion.Properties.Resources.búsqueda_20;
-            this.gBtnBuscarProd.ImageSize = new System.Drawing.Size(28, 28);
-            this.gBtnBuscarProd.Location = new System.Drawing.Point(243, 58);
-            this.gBtnBuscarProd.Name = "gBtnBuscarProd";
-            this.gBtnBuscarProd.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
-            this.gBtnBuscarProd.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gBtnBuscarProd.OnHoverForeColor = System.Drawing.Color.White;
-            this.gBtnBuscarProd.OnHoverImage = null;
-            this.gBtnBuscarProd.OnPressedColor = System.Drawing.Color.Black;
-            this.gBtnBuscarProd.Size = new System.Drawing.Size(43, 43);
-            this.gBtnBuscarProd.TabIndex = 5;
-            this.gBtnBuscarProd.Click += new System.EventHandler(this.gBtnBuscarProd_Click);
-            // 
-            // gBtnBuscarPr
-            // 
-            this.gBtnBuscarPr.AnimationHoverSpeed = 0.07F;
-            this.gBtnBuscarPr.AnimationSpeed = 0.03F;
-            this.gBtnBuscarPr.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
-            this.gBtnBuscarPr.BorderColor = System.Drawing.Color.Black;
-            this.gBtnBuscarPr.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gBtnBuscarPr.FocusedColor = System.Drawing.Color.Empty;
-            this.gBtnBuscarPr.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gBtnBuscarPr.ForeColor = System.Drawing.Color.White;
-            this.gBtnBuscarPr.Image = global::CapaPresentacion.Properties.Resources.búsqueda_20;
-            this.gBtnBuscarPr.ImageSize = new System.Drawing.Size(28, 28);
-            this.gBtnBuscarPr.Location = new System.Drawing.Point(533, 44);
-            this.gBtnBuscarPr.Name = "gBtnBuscarPr";
-            this.gBtnBuscarPr.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
-            this.gBtnBuscarPr.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gBtnBuscarPr.OnHoverForeColor = System.Drawing.Color.White;
-            this.gBtnBuscarPr.OnHoverImage = null;
-            this.gBtnBuscarPr.OnPressedColor = System.Drawing.Color.Black;
-            this.gBtnBuscarPr.Size = new System.Drawing.Size(43, 43);
-            this.gBtnBuscarPr.TabIndex = 5;
-            this.gBtnBuscarPr.Click += new System.EventHandler(this.gBtnBuscarPr_Click);
-            // 
-            // Idproducto
-            // 
-            this.Idproducto.FillWeight = 79.54546F;
-            this.Idproducto.HeaderText = "Id";
-            this.Idproducto.MinimumWidth = 30;
-            this.Idproducto.Name = "Idproducto";
-            this.Idproducto.ReadOnly = true;
-            this.Idproducto.Visible = false;
-            // 
-            // Producto
-            // 
-            this.Producto.FillWeight = 355.9276F;
-            this.Producto.HeaderText = "Producto";
-            this.Producto.MinimumWidth = 150;
-            this.Producto.Name = "Producto";
-            this.Producto.ReadOnly = true;
-            // 
-            // Costo
-            // 
-            this.Costo.FillWeight = 204.3646F;
-            this.Costo.HeaderText = "Costo";
-            this.Costo.MinimumWidth = 80;
-            this.Costo.Name = "Costo";
-            this.Costo.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            this.Precio.FillWeight = 10.32773F;
-            this.Precio.HeaderText = "Precio";
-            this.Precio.MinimumWidth = 300;
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.FillWeight = 31.52491F;
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.MinimumWidth = 200;
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            // 
-            // SubTotal
-            // 
-            this.SubTotal.HeaderText = "Sub Total";
-            this.SubTotal.MinimumWidth = 200;
-            this.SubTotal.Name = "SubTotal";
-            this.SubTotal.ReadOnly = true;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.FillWeight = 0.02217987F;
-            this.btnEliminar.HeaderText = "";
-            this.btnEliminar.MinimumWidth = 30;
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.ReadOnly = true;
             // 
             // FrmRegistrarCom
             // 
