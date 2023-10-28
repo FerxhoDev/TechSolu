@@ -135,7 +135,7 @@ namespace CapaPresentacion
 
         private void gBtnCompras_Click(object sender, EventArgs e)
         {
-            AbrirFormulario((Guna2GradientButton)sender, new frmCompras());
+            AbrirFormulario((Guna2GradientButton)sender, new frmCompras(usuariolog));
         }
 
         private void guna2GradientButton4_Click(object sender, EventArgs e)

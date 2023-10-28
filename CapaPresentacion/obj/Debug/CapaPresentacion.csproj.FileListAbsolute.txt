@@ -30,3 +30,6 @@ F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.f
 F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmProducto.resources
 F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmClientes.resources
 F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.frmNegocio.resources
+F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.FrmRegistrarCom.resources
+F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProveedor.resources
+F:\MediFarmServices\MediFarmSistem\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProducto.resources

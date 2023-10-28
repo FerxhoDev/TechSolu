@@ -34,7 +34,7 @@ namespace CapaPresentacion
             gCmbBusqueda.SelectedIndex = 0;
 
 
-            // se obtien listado de Usuarios
+            // se obtien listado de Proveedores
 
             List<Proveedor> listaProveedor = new CN_Proveedor().Listar();
 

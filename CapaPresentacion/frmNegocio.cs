@@ -56,8 +56,6 @@ namespace CapaPresentacion
             gTxtNit.Text = datos.NIT;
             gTxtDireccion.Text = datos.Direcion;
 
-
-
         }
 
         private void gBtnCargarL_Click(object sender, EventArgs e)
